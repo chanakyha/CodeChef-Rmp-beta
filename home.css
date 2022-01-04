@@ -1,0 +1,55 @@
+.backg{ 
+   
+ height: 95vh;
+}
+
+
+.navbar{ 
+ float: right; 
+ margin-right: 20px; 
+} 
+
+.navbar ul li{ 
+display: inline-block;   
+list-style-type: none; 
+margin: 0.8px;  
+
+} 
+
+.navbar ul li a{ 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    font-size: 18px;   
+    margin: 5px;
+    padding: 6px 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+.navbar ul li a:active{}
+.navbar ul li a:hover{ 
+    background-color: rgb(255, 202, 67); 
+    border-radius: 5px;
+} 
+
+.center-cc{ 
+    position: absolute; 
+    top: 35%;
+    left: 20%; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+.center-cc h1{ 
+    color: black; 
+    font-size: 70px; 
+    font-weight: bold; 
+    width: 900px; 
+    text-align: center;
+} 
+
+.center-cc h2{ 
+    color: black; 
+    font-size: 20px; 
+    font-weight: lighter; 
+    width: 900px; 
+    text-align: center;
+}
