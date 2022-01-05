@@ -1,6 +1,6 @@
 # CodeChef Rmp Website (beta)
 
-**Live Website Preview: ** 
+*Live Website Preview:* https://chanakyha.github.io/CodeChef-Rmp-beta/
 
 ## Table of Contents
 
