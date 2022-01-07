@@ -15,7 +15,10 @@ body {
   background: #fffc00;
   background: -webkit-linear-gradient(to right, #ffffff, #fffc00);
   background: linear-gradient(to left, #ffffff 20%, rgb(255, 202, 67));
+  background-attachment: fixed;
   overflow: hidden;
+  width: 100%;
+  margin-right: 0 !important;
 }
 
 @keyframes introAnimation {
@@ -134,14 +137,12 @@ body {
 }
 
 /* Mobile Devices */
-@media (max-width: 576px) {
-  
+@media (min-width: 320px) {
 
   .intro {
     margin: 0;
     transition: 2.5s ease-in-out;
     transform: scale(0.8) rotateX(calc(360deg * 3));
-    white-space: nowrap;
     display: inherit;
   }
 
@@ -185,7 +186,7 @@ body {
   }
   100% {
     transition: 4s ease-in-out;
-    transform: scale(0.5);
+    transform: scale(1);
   }
 }
 .logo {
@@ -214,18 +215,19 @@ body {
 
 footer {
   text-align: center;
-  margin-top: 4vh;
   animation: 1s ease-out 0s 1 socailMediaIntro;
+  margin-top: 4vh;
 }
 
 
 
 .wrapper{
   display: inline-flex;
-  transform: scale(0.5);
+  
 }
 .wrapper .icon{
-  margin: 0 20px;
+  transform: scale(0.5, 0.5);
+  margin: 0 0px;
   text-align: center;
   cursor: pointer;
   display: flex;
@@ -249,6 +251,7 @@ footer {
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon span i{
+  
   line-height: 60px;
   font-size: 25px;
 }
