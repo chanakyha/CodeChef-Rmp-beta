@@ -337,12 +337,12 @@ footer {
 .wrapper .instagram:hover span,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip:before{
-  background: #e1306c;
+  background: #833AB4;
 }
-.wrapper .github:hover span,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before{
-  background: #333;
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip:before{
+  background: #2867B2;
 }
 .wrapper .youtube:hover span,
 .wrapper .youtube:hover .tooltip,
