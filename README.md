@@ -16,6 +16,6 @@
 | ---- | ---------------- | ---------------------------- |
 | 1    | Chanakyha.V      | https://github.com/chanakyha |
 | 2    | Rashwanth        | https://github.com/Rasz7     |
-| 3    | Atharva          |                              |
+| 3    | Atharva          | https://github.com/atharva-p |
 | 4    | Jyothi sai kiran |                              |
 
