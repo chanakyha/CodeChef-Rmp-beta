@@ -22,7 +22,7 @@
     <header id="navbar">
         <nav class="navbar navbar-light navbar-expand-lg bg-sm-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="img/logo-without-bg.png" alt="main-logo" height="80" width="80"
                         class="main-logo img-fluid" />
                 </a>
@@ -41,17 +41,42 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> Projects </a>
+                                <!-- Button trigger modal -->
+                                <a type="button" class="nav-link" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#social-media-pages">
+                                    Social Media Pages
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="social-pages.html">Social Pages</a>
-                            </li>
+                            <!-- Modal -->
+                            <div class="modal fade" id="social-media-pages" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Select Which Feed you want
+                                                to See</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body btn-group">
+                                            <a class="btn btn-primary" href="media-pages/twitter.html"><i
+                                                    class="bi bi-chevron-right"></i>Twitter</a>
+                                            <butoon
+                                                onclick="alert('we need login credentials to embeed the profile/post')"
+                                                class="btn btn-secondary"><i class="bi bi-chevron-right"></i>Instagram
+                                            </butoon>
+                                            <button
+                                                onclick="alert('we need login credentials to embeed the profile/post')"
+                                                class="btn btn-danger"><i
+                                                    class="bi bi-chevron-right"></i>LinkedIn</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <li class="nav-item">
                                 <a class="nav-link" href="contactus.html">Contact Us</a>
                             </li>
@@ -66,8 +91,49 @@
     </header>
 
     <!-- The Contact Us Form -->
-    <div class="container">
-
+    <div class="container my-5">
+        <div class="card p-5">
+            <div class="card-title text-center h1">Contact Our CodeChef Team</div>
+            <div class="container">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Message Title</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">The Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Contact-form">
+                        Social Media Pages
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Contact-form" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary text-light">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Response Form Submitted
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">Thank for contacting Us, We will reply back to you soon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <!-- carousel -->

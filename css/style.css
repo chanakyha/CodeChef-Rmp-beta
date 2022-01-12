@@ -16,7 +16,7 @@ body {
   background: -webkit-linear-gradient(to right, #ffffff, #fffc00);
   background: linear-gradient(to left, #ffffff 20%, rgb(255, 202, 67));
   background-attachment: fixed;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   margin-right: 0 !important;
 }

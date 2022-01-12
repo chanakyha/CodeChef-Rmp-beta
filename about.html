@@ -93,7 +93,7 @@
     <header id="navbar">
         <nav class="navbar navbar-light navbar-expand-lg bg-sm-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="img/logo-without-bg.png" alt="main-logo" height="80" width="80"
                         class="main-logo img-fluid" />
                 </a>
@@ -112,17 +112,45 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">Events</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"> Projects </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="social-pages.html">Social Pages</a>
+                                <!-- Button trigger modal -->
+                                <a type="button" class="nav-link" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#social-media-pages">
+                                    Social Media Pages
+                                </a>
                             </li>
+                            <!-- Modal -->
+                            <div class="modal fade" id="social-media-pages" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Select Which Feed you want
+                                                to See</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body btn-group">
+                                            <a class="btn btn-primary" href="media-pages/twitter.html"><i
+                                                    class="bi bi-chevron-right"></i>Twitter</a>
+                                            <butoon
+                                                onclick="alert('we need login credentials to embeed the profile/post')"
+                                                class="btn btn-secondary"><i class="bi bi-chevron-right"></i>Instagram
+                                            </butoon>
+                                            <button
+                                                onclick="alert('we need login credentials to embeed the profile/post')"
+                                                class="btn btn-danger"><i
+                                                    class="bi bi-chevron-right"></i>LinkedIn</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <li class="nav-item">
                                 <a class="nav-link" href="contactus.html">Contact Us</a>
                             </li>
@@ -285,75 +313,11 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
     </div>
 
     <br>
 
 
-=======
-    </div>
-
-    <br>
-    <!-- carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                aria-label="Slide 7"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                aria-label="Slide 8"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./banner/coreteamBanner1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner/coreteamBanner2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner/coreteamBanner3.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner/coreteamBanner4.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner/coreteamBanner5.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner/coreteamBanner6.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner/coreteamBanner7.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner/coreteambanner8.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
->>>>>>> dfeb2564014e4e2d4cbacb4986dd0374de4fa530
 
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
