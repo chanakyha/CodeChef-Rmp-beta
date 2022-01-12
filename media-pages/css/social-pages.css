@@ -3,7 +3,7 @@
 
 :root {
   --bg-color: rgb(255, 202, 67);
-  --primary: #0074d9; 
+  --primary: #0074d9;
   --danger: #ff4136;
   --warning: #f0ad4e;
   --success: #5cb85c;
@@ -22,14 +22,17 @@ body {
 }
 
 #pages {
-    margin-top: 2vh;
-    font-family: "Arvo", serif;
+  margin-top: 2vh;
+  font-family: "Arvo", serif;
 }
 
 #pages .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.modal-backdrop {
+  z-index: 100;
+}
 
 .navbar ul li {
   display: inline-block;
@@ -49,7 +52,6 @@ body {
   background-color: var(--bg-color);
   border-radius: 5px;
 }
-
 
 /* Tablet Devices */
 @media (max-width: 768px) {
@@ -74,7 +76,6 @@ body {
     opacity: 1;
   }
 }
-
 
 /* Laptop  */
 @media (min-width: 992px) {
@@ -106,8 +107,7 @@ body {
 }
 
 /* Mobile Devices */
-@media (min-width: 320px) {
-
+@media screen and (max-width: 320px) {
   .intro {
     margin: 0;
     transition: 2.5s ease-in-out;
@@ -119,6 +119,9 @@ body {
     transition: 2s ease-in-out;
     transform: scale(0.8);
   }
+  .btn-group {
+    width: 98vw;
+  }
 }
 
 .navbar-nav .nav-item {
@@ -127,7 +130,7 @@ body {
 
 .jumbotron {
   align-items: center;
-  display:flex;
+  display: flex;
   background-color: transparent;
 }
 
@@ -138,5 +141,3 @@ body {
 .jumbotron .container p {
   font-size: 1.5em;
 }
-
-

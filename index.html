@@ -45,8 +45,31 @@
                 <a class="nav-link" href="#"> Projects </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="social-pages.html">Social Pages</a>
+                <!-- Button trigger modal -->
+                <a type="button" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#social-media-pages">
+                  Social Media Pages
+                </a>
               </li>
+              <!-- Modal -->
+              <div class="modal fade" id="social-media-pages" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Select Which Feed you want to See</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body btn-group">
+                      <a class="btn btn-primary" href="media-pages/twitter.html"><i
+                          class="bi bi-chevron-right"></i>Twitter</a>
+                      <a class="btn btn-secondary" href="media-pages/instagram.html"><i
+                          class="bi bi-chevron-right"></i>Instagram</a>
+                      <a class="btn btn-danger" href="media-pages/linkedin.html"><i
+                          class="bi bi-chevron-right"></i>LinkedIn</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <li class="nav-item">
                 <a class="nav-link" href="contactus.html">Contact Us</a>
               </li>

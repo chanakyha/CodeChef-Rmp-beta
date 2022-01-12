@@ -3,7 +3,7 @@
 
 :root {
   --bg-color: rgb(255, 202, 67);
-  --primary: #0074d9; 
+  --primary: #0074d9;
   --danger: #ff4136;
   --warning: #f0ad4e;
   --success: #5cb85c;
@@ -45,9 +45,10 @@ body {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   border-radius: 50%;
-  
+
   position: absolute;
   width: 100%;
   height: 100%;
@@ -68,7 +69,7 @@ body {
   transform: rotateY(180deg);
 }
 
-.flip-card-back img{
+.flip-card-back img {
   border: 2px solid transparent;
   margin-top: 9.5vh;
 }
@@ -91,8 +92,6 @@ body {
     transform: scale(1);
   }
 }
-
-
 
 #navbar {
   animation: 1s ease-out 0s 1 navbarSlide;
@@ -125,7 +124,6 @@ body {
   border-radius: 5px;
 }
 
-
 /* Tablet Devices */
 @media (max-width: 768px) {
   @keyframes navbarSlide {
@@ -150,6 +148,9 @@ body {
   }
 }
 
+.modal-backdrop {
+  z-index: 100;
+}
 
 /* Laptop  */
 @media (min-width: 992px) {
@@ -189,8 +190,7 @@ body {
 }
 
 /* Mobile Devices */
-@media (min-width: 320px) {
-
+@media screen and (max-width: 320px) {
   .intro {
     margin: 0;
     transition: 2.5s ease-in-out;
@@ -202,6 +202,9 @@ body {
     transition: 2s ease-in-out;
     transform: scale(0.8);
   }
+  .btn-group {
+    width: 98vw;
+  }
 }
 
 .navbar-nav .nav-item {
@@ -209,9 +212,9 @@ body {
 }
 
 .jumbotron {
-  height:100vh; 
+  height: 100vh;
   align-items: center;
-  display:flex;
+  display: flex;
 }
 
 .jumbotron .container h1 {
@@ -222,14 +225,13 @@ body {
   font-size: 1.5em;
 }
 
-
 @keyframes logoIntro {
   0% {
     transform: rotate(0) scale(0);
   }
   100% {
     transition: 4s ease-in-out;
-    transform: rotate(calc(360deg*1));
+    transform: rotate(calc(360deg * 1));
   }
 }
 @keyframes socailMediaIntro {
@@ -242,11 +244,9 @@ body {
   }
 }
 
-
 .move-up {
-    margin-bottom: 24vh;
-} 
-
+  margin-bottom: 24vh;
+}
 
 footer {
   text-align: center;
@@ -254,13 +254,10 @@ footer {
   margin-top: 4vh;
 }
 
-
-
-.wrapper{
+.wrapper {
   display: inline-flex;
-  
 }
-.wrapper .icon{
+.wrapper .icon {
   transform: scale(0.5, 0.5);
   margin: 0 0px;
   text-align: center;
@@ -274,7 +271,7 @@ footer {
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   color: black;
 }
-.wrapper .icon span{
+.wrapper .icon span {
   display: block;
   height: 60px;
   width: 60px;
@@ -282,15 +279,14 @@ footer {
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon span i{
-  
+.wrapper .icon span i {
   line-height: 60px;
   font-size: 25px;
 }
-.wrapper .icon .tooltip{
+.wrapper .icon .tooltip {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -302,15 +298,15 @@ footer {
   border-radius: 25px;
   opacity: 0;
   pointer-events: none;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon:hover .tooltip{
+.wrapper .icon:hover .tooltip {
   top: -70px;
   opacity: 1;
   pointer-events: auto;
 }
-.icon .tooltip:before{
+.icon .tooltip:before {
   position: absolute;
   content: "";
   height: 15px;
@@ -321,31 +317,31 @@ footer {
   transform: translateX(-50%) rotate(45deg);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon:hover span{
+.wrapper .icon:hover span {
   color: #fff;
 }
 .wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip{
-  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
 
 .wrapper .twitter:hover span,
 .wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before{
-  background: #46C1F6;
+.wrapper .twitter:hover .tooltip:before {
+  background: #46c1f6;
 }
 .wrapper .instagram:hover span,
 .wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before{
-  background: #833AB4;
+.wrapper .instagram:hover .tooltip:before {
+  background: #833ab4;
 }
 .wrapper .linkedin:hover span,
 .wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip:before{
-  background: #2867B2;
+.wrapper .linkedin:hover .tooltip:before {
+  background: #2867b2;
 }
 .wrapper .youtube:hover span,
 .wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip:before{
-  background: #DE463B;
+.wrapper .youtube:hover .tooltip:before {
+  background: #de463b;
 }
