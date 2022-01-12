@@ -3,7 +3,7 @@
 
 :root {
   --bg-color: rgb(255, 202, 67);
-  --primary: #0074d9; 
+  --primary: #0074d9;
   --danger: #ff4136;
   --warning: #f0ad4e;
   --success: #5cb85c;
@@ -19,4 +19,8 @@ body {
   overflow-x: hidden;
   width: 100%;
   margin-right: 0 !important;
+}
+
+.carousel {
+  width: 50%;
 }
