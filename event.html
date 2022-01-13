@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logo-without-bg.png" />
+  <title>CodeChef SRMRMP</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css" />
+<style>  
+body{ 
+    overflow: auto;
+}
+
+/* style for cards  */
+.flip-cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            /* justify-content: space-between; */
+            margin: 10vh 5vh;  
+            margin-left: 75px;
+            
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px; 
+            padding: 5px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            border-radius: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            color: black;
+            transform: rotateY(180deg);
+            background-color: white !important;
+        }
+    
+</style> 
+
+</head> 
+
+<body style="overflow: auto;">
+
+  <header id="navbar">
+    <nav class="navbar navbar-light navbar-expand-lg bg-sm-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="img/logo-without-bg.png" alt="main-logo" height="80" width="80" class="main-logo img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The Contents</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <a type="button" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#social-media-pages">
+                  Social Media Pages
+                </a>
+              </li>
+              <!-- Modal -->
+              <div class="modal fade" id="social-media-pages" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Select Which Feed you want to See</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body btn-group">
+                      <a class="btn btn-primary" href="media-pages/twitter.html"><i
+                          class="bi bi-chevron-right"></i>Twitter</a>
+                      <butoon onclick="alert('we need login credentials to embeed the profile/post')"
+                        class="btn btn-secondary"><i class="bi bi-chevron-right"></i>Instagram</butoon>
+                      <button onclick="alert('we need login credentials to embeed the profile/post')"
+                        class="btn btn-danger"><i class="bi bi-chevron-right"></i>LinkedIn</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+
+  <div class="flip-cards-container">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>DDD</h1>
+                <p>Team Lead</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, id pariatur nihil accusantium
+                    impedit in voluptatem repellendus iure nam corrupti?</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>ROASTING SRM</h1>
+                <p>Tag Line</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, id pariatur nihil accusantium
+                    impedit in voluptatem repellendus iure nam corrupti?</p>
+            </div>
+        </div>
+    </div> 
+    </div>
+
+  
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
