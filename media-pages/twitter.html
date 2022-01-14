@@ -18,17 +18,16 @@
 <body>
 
     <header id="navbar">
-        <nav class="navbar navbar-light navbar-expand-lg">
+        <nav class="navbar navbar-light navbar-expand-lg bg-sm-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logo-without-bg.png" alt="main-logo" height="80" width="80"
-                        class="main-logo img-fluid" />
+                    <img src="../img/logo-without-bg.png" alt="main-logo" height="80" width="80" class="main-logo img-fluid" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+    
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -39,7 +38,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Events</a>
+                                <a class="nav-link" href="../event.html">Events</a>
                             </li>
                             <li class="nav-item">
                                 <!-- Button trigger modal -->
@@ -55,24 +54,20 @@
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Select Which Feed you want
-                                                to See</h5>
+                                            <h5 class="modal-title" id="staticBackdropLabel">Select Which Feed you want to
+                                                See</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body btn-group">
-                                            <a class="btn btn-primary" href="twitter.html"><i
+                                            <a class="btn btn-primary" href="media-pages/twitter.html"><i
                                                     class="bi bi-chevron-right"></i>Twitter</a>
-                                            <butoon
-                                                onclick="alert('we need login credentials to embeed the profile/post')"
+                                            <butoon onclick="alert('we need login credentials to embeed the profile/post')"
                                                 class="btn btn-secondary"><i class="bi bi-chevron-right"></i>Instagram
                                             </butoon>
-                                            <button
-                                                onclick="alert('we need login credentials to embeed the profile/post')"
-                                                class="btn btn-danger"><i
-                                                    class="bi bi-chevron-right"></i>LinkedIn</button>
+                                            <button onclick="alert('we need login credentials to embeed the profile/post')"
+                                                class="btn btn-danger"><i class="bi bi-chevron-right"></i>LinkedIn</button>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
