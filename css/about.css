@@ -227,3 +227,7 @@ body {
 .button:hover {
   background-color: #555;
 }
+
+a.badge:hover {
+  color: white;
+}
